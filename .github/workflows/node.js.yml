@@ -24,4 +24,4 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          command: deploy src/server.ts --name projectkf-api --compatibility-flag nodejs_compat
+          command: deploy src/server.ts --name projectkf-api --compatibility-flag nodejs_compat --compatibility-date 2026-04-16
