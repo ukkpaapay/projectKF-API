@@ -1,6 +1,6 @@
 {
   "name": "projectkf-api",
-  "main": "src/app.ts",
+  "main": "src/server.ts",
   "compatibility_date": "2024-04-16",
   "observability": {
     "enabled": true
