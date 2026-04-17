@@ -1,5 +1,5 @@
 export interface CustomRequest extends Express.Request {
-    user?: any; // Add any custom properties you need
+    user?: string; // Add any custom properties you need
 }
 
 export interface CustomResponse extends Express.Response {
