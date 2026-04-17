@@ -1,15 +1,12 @@
 import { Router, Express } from 'express';
-import IndexController from '../controllers/index';
 import cors from 'cors';
+import UsersRouter from './users';
 
 export function setRoutes(app: Express) {
     app.use(cors());
 
     const router = Router();
-    const indexController = new IndexController();
-
-    router.get('/', indexController.getIndex);
-    router.post('/item', indexController.postItem);
+    router.use('/user', UsersRouter);
 
     app.use('/api', router);
 }
