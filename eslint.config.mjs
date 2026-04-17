@@ -13,9 +13,9 @@ export default tseslint.config(
             },
         },
         rules: {
-            "prefer-const": "warn",
+            "prefer-const": "error",
             "no-constant-binary-expression": "error",
-            "@typescript-eslint/no-explicit-any": "warn"
+            "@typescript-eslint/no-explicit-any": "error"
         },
     },
 );
